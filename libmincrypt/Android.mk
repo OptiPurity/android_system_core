@@ -8,6 +8,11 @@ LOCAL_SRC_FILES := rsa.c sha.c sha256.c
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libminshacrypt
+LOCAL_SRC_FILES := sha.c sha256.c
+include $(BUILD_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
 
 LOCAL_MODULE := libmincrypt
 LOCAL_SRC_FILES := rsa.c sha.c sha256.c
